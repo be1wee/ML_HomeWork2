@@ -9,8 +9,6 @@ venv/
 *.egg-info/
 dist/
 build/
-data/
-models/*.pt
 !models/.gitkeep
 .vscode/
 .idea/

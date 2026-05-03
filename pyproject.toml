@@ -12,7 +12,6 @@ python = "^3.9"
 opencv-python = "^4.9.0"
 ultralytics = "8.2.0"
 torch = "2.5.1"
-wandb = "^0.26.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
