@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  car-number-detector:
+    build: .
+    container_name: car-number-app
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - "/dev/video0:/dev/video0"
+    environment:
+      - PYTHONUNBUFFERED=1
