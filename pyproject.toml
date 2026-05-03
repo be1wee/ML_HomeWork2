@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "car-number-app"
+version = "0.1.0"
+description = "YOLO-based car number detection"
+authors = ["Beisheev Abai <be1wee@mail.ru>"]
+readme = "README.md"
+packages = [{include = "src"}]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.9.0"
+ultralytics = "8.2.0"
+torch = "2.5.1"
+wandb = "^0.26.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ZXCnumber = "src.cli:main"
