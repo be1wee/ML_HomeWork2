@@ -29,4 +29,5 @@ docker compose run --rm car-number-detector --mode video --source /app/data/inpu
 docker compose run --rm car-number-detector --mode stream --source /app/data/input/closeDistance.mp4
 
 # Результат
+data\demo\wdemo.gif
 ![описание](data\demo\wdemo.gif)

@@ -8,16 +8,20 @@ from src.logger import app_logger
 
 def process_video(model, source, output_path):
     app_logger.info(f"Processing video: {source}")
+
     cap = cv2.VideoCapture(source)
     if not cap.isOpened():
         app_logger.error(f"Cannot open video: {source}")
         return
+    
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
+
     frame_count = 0
     total_time = 0
+    
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -96,4 +100,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # PEPE SHELE WATAFA
