@@ -32,3 +32,4 @@ docker compose run --rm car-number-detector --mode stream --source /app/data/inp
 data\demo\wdemo.gif
 
 ![воч демо](data\demo\wdemo-small.gif)
+![воч демо](https://github.com/be1wee/ML_HomeWork2/blob/main/data/demo/wdemo.gif)
