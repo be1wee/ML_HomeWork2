@@ -30,4 +30,4 @@ docker compose run --rm car-number-detector --mode stream --source /app/data/inp
 
 # Результат
 data\demo\wdemo.gif
-![описание](data\demo\wdemo.gif)
+[воч демо](data\demo\wdemo.gif)
